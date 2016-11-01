@@ -58,6 +58,9 @@ void draw() {
   image (pumpkin, x, y);
 }
 void mousePressed() {
+  if (mode == HIT) {
+    mode = READY;
+    
   mode = FIRE;
 }
 
